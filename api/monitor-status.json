@@ -1,0 +1,46 @@
+{
+  "isScanning": false,
+  "lastScan": "2026-04-29 09:31",
+  "updates": [
+    {
+      "uuid": "abe18ee3-34cb-4172-b974-07bb0ea49b0f",
+      "id": "BWRX-300",
+      "category": "Commercial",
+      "time": "2026-04-29 09:37",
+      "url": "https://www.opg.com/news/example-bwrx300-contract",
+      "snippet": "Official Announcement: Ontario Power Generation (OPG) has signed a contract for the next phase of the Darlington New Nuclear Project (DNNP) with GE Hitachi, targeting grid connection by 2029.",
+      "groups": [
+        "老楊追蹤群組"
+      ],
+      "isRead": false,
+      "isNew": true
+    },
+    {
+      "uuid": "f742f61f-bd43-4975-85ce-5f4bb509fdd5",
+      "id": "Natura Resources",
+      "category": "R&D",
+      "time": "2026-04-29 09:37",
+      "url": "https://www.naturaresources.com/news/test-success",
+      "snippet": "System Detected: Natura Resources laboratory reports successful 5,000-hour continuous operation of its molten salt cooling loop, with performance exceeding initial design parameters.",
+      "groups": [
+        "老楊追蹤群組"
+      ],
+      "isRead": false,
+      "isNew": true
+    },
+    {
+      "uuid": "23f0984e-f3ea-4621-8ab8-8c55d00cd3e6",
+      "id": "AP300",
+      "category": "Regulatory",
+      "time": "2026-04-29 09:37",
+      "url": "https://www.westinghousenuclear.com/ap300-uk-gda",
+      "snippet": "Under Review: AP300 has completed the initial technical assessment for Phase 1 of the Generic Design Assessment (GDA) submitted to the UK Office for Nuclear Regulation (ONR).",
+      "groups": [
+        "老楊追蹤群組"
+      ],
+      "isRead": true,
+      "isNew": true
+    }
+  ],
+  "unreadCount": 2
+}

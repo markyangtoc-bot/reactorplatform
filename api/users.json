@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u-001",
+    "username": "admin",
+    "passwordHash": "$2b$10$eP70EDPg8htCZm4H9cgQhe8Dd13wDcCl7PKmaVegAznPrwSE50/di",
+    "displayName": "系統管理員",
+    "role": "admin",
+    "enabled": true,
+    "createdAt": "2026-04-29"
+  },
+  {
+    "id": "u-002",
+    "username": "viewer",
+    "passwordHash": "$2b$10$Q7WvX6LIMNV1b5ZwFb1Ame/03qj2V.aZGVSLtjkcKcg.4FI7WpXoe",
+    "displayName": "一般檢視者",
+    "role": "viewer",
+    "enabled": true,
+    "createdAt": "2026-04-29"
+  },
+  {
+    "id": "u-1777446763202",
+    "username": "MARK",
+    "passwordHash": "$2b$10$ksTQMtsaJ7AsfAn2D3xu9OOXtzo5o1skOjh0Ku637IxS5668YYHPe",
+    "displayName": "老馬",
+    "role": "editor",
+    "enabled": true,
+    "createdAt": "2026-04-29"
+  }
+]

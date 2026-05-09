@@ -1,0 +1,28 @@
+{
+  "suppliers": [
+    {"id": "framatome", "name": "Framatome", "country": "France", "city": "Paris", "lat": 48.85, "lng": 2.35, "specialty": ["壓力容器", "燃料組件", "儀控系統"], "clients": ["EPR", "AP1000", "ATMEA1"], "website": "https://www.framatome.com"},
+    {"id": "bwxt-sup", "name": "BWX Technologies (製造)", "country": "Canada", "city": "Cambridge, ON", "lat": 43.37, "lng": -80.31, "specialty": ["壓力容器", "核燃料組件", "精密元件"], "clients": ["SMR-160", "AP1000", "BWRX-300"]},
+    {"id": "doosan", "name": "Doosan Enerbility", "country": "South Korea", "city": "昌原", "lat": 35.23, "lng": 128.68, "specialty": ["蒸汽發生器", "渦輪機組", "壓力容器"], "clients": ["APR1400", "SMART", "KEPCO"], "website": "https://www.doosanenerbility.com"},
+    {"id": "tvel", "name": "TVEL Fuel Company (Rosatom)", "country": "Russia", "city": "莫斯科", "lat": 55.76, "lng": 37.62, "specialty": ["燃料組件", "鋯合金管材"], "clients": ["VVER", "RITM-200", "KLT-40S"]},
+    {"id": "knf", "name": "Korea Nuclear Fuel (KNF)", "country": "South Korea", "city": "大田", "lat": 36.37, "lng": 127.39, "specialty": ["燃料組件製造"], "clients": ["APR1400", "SMART"]},
+    {"id": "mitsubishi-hvy", "name": "Mitsubishi Heavy Industries", "country": "Japan", "city": "東京", "lat": 35.69, "lng": 139.70, "specialty": ["壓力容器", "蒸汽發生器", "控制棒驅動"], "clients": ["US-APWR", "ATMEA1"], "website": "https://www.mhi.com"},
+    {"id": "jfe", "name": "JFE Steel", "country": "Japan", "city": "東京", "lat": 35.52, "lng": 139.54, "specialty": ["核級鋼板", "壓力容器材料"], "clients": ["AP1000", "BWR系列"]},
+    {"id": "siemens-energy", "name": "Siemens Energy", "country": "Germany", "city": "慕尼黑", "lat": 48.14, "lng": 11.55, "specialty": ["渦輪發電機", "工廠自動化"], "clients": ["EPR", "多款 SMR"], "website": "https://www.siemens-energy.com"},
+    {"id": "ansaldo", "name": "Ansaldo Nucleare", "country": "Italy", "city": "熱那亞", "lat": 44.41, "lng": 8.93, "specialty": ["蒸汽發生器", "設計工程"], "clients": ["EPR", "ALFRED"]},
+    {"id": "rolls-royce-sup", "name": "Rolls-Royce (核電零件)", "country": "United Kingdom", "city": "德比", "lat": 52.92, "lng": -1.48, "specialty": ["冷卻泵", "輔助系統", "整合反應器"], "clients": ["UK SMR", "皇家海軍核動力"], "website": "https://www.rolls-royce.com"},
+    {"id": "cwc", "name": "Curtiss-Wright Corporation", "country": "USA", "city": "Parsippany, NJ", "lat": 40.87, "lng": -74.43, "specialty": ["儀控系統", "反應器閥門", "特殊泵組"], "clients": ["AP1000", "BWRX-300", "多款 SMR"]},
+    {"id": "orano", "name": "Orano (前AREVA)", "country": "France", "city": "巴黎", "lat": 48.85, "lng": 2.29, "specialty": ["鈾礦開採", "濃縮鈾", "燃料循環", "後處理"], "clients": ["EPR", "多國電廠"], "website": "https://www.orano.group"},
+    {"id": "centrus", "name": "Centrus Energy", "country": "USA", "city": "Bethesda, MD", "lat": 38.98, "lng": -77.10, "specialty": ["HALEU濃縮", "燃料供應"], "clients": ["Xe-100", "TerraPower", "多款 HTGR"]},
+    {"id": "kazatomprom", "name": "Kazatomprom (哈薩克原子能)", "country": "Kazakhstan", "city": "阿斯塔納", "lat": 51.17, "lng": 71.45, "specialty": ["鈾礦開採供應（全球最大）"], "clients": ["全球核燃料製造商"]},
+    {"id": "cameco", "name": "Cameco Corporation", "country": "Canada", "city": "Saskatoon, SK", "lat": 52.13, "lng": -106.67, "specialty": ["鈾礦", "燃料服務"], "clients": ["全球核電廠"], "website": "https://www.cameco.com"},
+    {"id": "hyundai-eng", "name": "現代建設 Hyundai E&C", "country": "South Korea", "city": "首爾", "lat": 37.52, "lng": 127.03, "specialty": ["廠房土建", "核電站建設"], "clients": ["APR1400 UAE", "新韓蔚"]},
+    {"id": "sk-ecoplant", "name": "SK Ecoplant", "country": "South Korea", "city": "首爾", "lat": 37.56, "lng": 126.98, "specialty": ["廠房建設", "模組施工"], "clients": ["SMR 廠房設計"]},
+    {"id": "wood-plc", "name": "Wood PLC (前AMEC)", "country": "United Kingdom", "city": "愛丁堡", "lat": 55.95, "lng": -3.19, "specialty": ["許可申請工程", "規劃設計"], "clients": ["UK SMR", "多款設計審查"]},
+    {"id": "meridian", "name": "Meridian Energy / Genesis (NZ)", "country": "Australia", "city": "雪梨", "lat": -33.87, "lng": 151.21, "specialty": ["再生能源整合", "系統整合"], "clients": ["SMR可行性研究"]},
+    {"id": "terrestrial-services", "name": "SNC-Lavalin / AtkinsRéalis", "country": "Canada", "city": "蒙特婁", "lat": 45.52, "lng": -73.59, "specialty": ["EPCM 統包服務", "核電廠設計"], "clients": ["CANDU", "AP1000", "多款 SMR"], "website": "https://www.atkinsrealis.com"},
+    {"id": "rolls-fuel", "name": "Global Laser Enrichment (GLE)", "country": "USA", "city": "Wilmington, NC", "lat": 34.22, "lng": -77.91, "specialty": ["鈾濃縮（雷射法）"], "clients": ["下一代核燃料"]},
+    {"id": "ge-vernova", "name": "GE Vernova", "country": "USA", "city": "Cambridge, MA", "lat": 42.37, "lng": -71.11, "specialty": ["渦輪機組", "電力轉換系統"], "clients": ["BWRX-300", "多款核能電廠"], "website": "https://www.gevernova.com"},
+    {"id": "emerson", "name": "Emerson Electric (核能儀控)", "country": "USA", "city": "St. Louis, MO", "lat": 38.63, "lng": -90.20, "specialty": ["DCS控制系統", "儀器儀表"], "clients": ["AP1000", "多款反應器"]},
+    {"id": "areva-forgings", "name": "Le Creusot Forge (法馬通)", "country": "France", "city": "Le Creusot", "lat": 46.81, "lng": 4.43, "specialty": ["大型鍛件", "核級反應器封頭"], "clients": ["EPR", "壓水式反應器"]}
+  ]
+}

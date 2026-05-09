@@ -1,0 +1,28 @@
+{
+  "headquarters": [
+    {"id": "nuscale", "name": "NuScale Power", "country": "USA", "city": "Portland, OR", "lat": 45.52, "lng": -122.68, "reactors": ["NuScale VOYGR"], "type": "開發商", "website": "https://www.nuscalepower.com"},
+    {"id": "rolls-royce-smr", "name": "Rolls-Royce SMR Ltd", "country": "United Kingdom", "city": "Derby", "lat": 52.92, "lng": -1.48, "reactors": ["Rolls-Royce SMR"], "type": "開發商", "website": "https://www.rollsroyce.com/smr"},
+    {"id": "xenergy", "name": "X-energy", "country": "USA", "city": "Rockville, MD", "lat": 39.08, "lng": -77.15, "reactors": ["Xe-100"], "type": "開發商", "website": "https://x-energy.com"},
+    {"id": "terrestrial", "name": "Terrestrial Energy", "country": "Canada", "city": "Oakville, ON", "lat": 43.47, "lng": -79.68, "reactors": ["IMSR400"], "type": "開發商", "website": "https://www.terrestrialenergy.com"},
+    {"id": "cnnc", "name": "中核集團 CNNC", "country": "China", "city": "北京", "lat": 39.90, "lng": 116.40, "reactors": ["ACP100", "ACPR50S", "CFR-600"], "type": "國有企業", "website": "http://www.cnnc.com.cn"},
+    {"id": "kaeri", "name": "韓國原子力研究院 KAERI", "country": "South Korea", "city": "大田", "lat": 36.38, "lng": 127.39, "reactors": ["SMART", "i-SMR"], "type": "研究機構", "website": "https://www.kaeri.re.kr"},
+    {"id": "rosatom", "name": "俄羅斯原子能公司 Rosatom", "country": "Russia", "city": "莫斯科", "lat": 55.76, "lng": 37.62, "reactors": ["RITM-200", "KLT-40S", "ABV-6E", "FNPP"], "type": "國有企業", "website": "https://www.rosatom.ru"},
+    {"id": "toshiba", "name": "東芝 Toshiba", "country": "Japan", "city": "東京", "lat": 35.69, "lng": 139.70, "reactors": ["4S"], "type": "開發商", "website": "https://www.toshiba.co.jp"},
+    {"id": "hitachi-ge", "name": "Hitachi-GE Nuclear Energy", "country": "Japan", "city": "日立市", "lat": 36.60, "lng": 140.65, "reactors": ["BWRX-300", "EU-ABWR"], "type": "開發商"},
+    {"id": "westinghouse", "name": "Westinghouse Electric", "country": "USA", "city": "Cranberry Township, PA", "lat": 40.69, "lng": -80.10, "reactors": ["AP300", "AP-600", "AP1000", "eVinci"], "type": "開發商", "website": "https://www.westinghousenuclear.com"},
+    {"id": "bwxt-dev", "name": "BWX Technologies (BWXT)", "country": "USA", "city": "Lynchburg, VA", "lat": 37.41, "lng": -79.14, "reactors": ["BWXT-200", "BWXT Micro"], "type": "開發商", "website": "https://www.bwxt.com"},
+    {"id": "geh", "name": "GE-Hitachi Nuclear Energy", "country": "USA", "city": "Wilmington, NC", "lat": 34.22, "lng": -77.91, "reactors": ["BWRX-300", "PRISM", "eSMR"], "type": "開發商"},
+    {"id": "moltex", "name": "Moltex Energy", "country": "United Kingdom", "city": "倫敦", "lat": 51.50, "lng": -0.12, "reactors": ["SSR-W"], "type": "開發商"},
+    {"id": "terrestrial-nbi", "name": "Terrestrial Energy USA", "country": "USA", "city": "Washington, DC", "lat": 38.89, "lng": -77.03, "reactors": ["IMSR400"], "type": "開發商"},
+    {"id": "usnc", "name": "Ultra Safe Nuclear Corp (USNC)", "country": "USA", "city": "Seattle, WA", "lat": 47.61, "lng": -122.33, "reactors": ["MMR", "HTGR-POLA"], "type": "開發商"},
+    {"id": "lastenergyco", "name": "Last Energy", "country": "USA", "city": "Washington, DC", "lat": 38.89, "lng": -77.00, "reactors": ["PWR-20"], "type": "開發商"},
+    {"id": "kairos", "name": "Kairos Power", "country": "USA", "city": "Alameda, CA", "lat": 37.77, "lng": -122.27, "reactors": ["KP-FHR", "Hermes"], "type": "開發商"},
+    {"id": "oklo", "name": "Oklo Inc.", "country": "USA", "city": "Sunnyvale, CA", "lat": 37.37, "lng": -122.04, "reactors": ["Aurora"], "type": "開發商"},
+    {"id": "tn-energy", "name": "TerraPower", "country": "USA", "city": "Bellevue, WA", "lat": 47.61, "lng": -122.20, "reactors": ["Natrium™", "TWR-P"], "type": "開發商", "website": "https://www.terrapower.com"},
+    {"id": "holtec", "name": "Holtec International", "country": "USA", "city": "Jupiter, FL", "lat": 26.93, "lng": -80.09, "reactors": ["SMR-160", "SMR-300"], "type": "開發商"},
+    {"id": "cameco-atkins", "name": "Cameco/SNC-Lavalin", "country": "Canada", "city": "多倫多", "lat": 43.65, "lng": -79.38, "reactors": ["CANDU-9", "ACR-1000"], "type": "開發商"},
+    {"id": "atucha-invap", "name": "INVAP (阿根廷)", "country": "Argentina", "city": "Bariloche", "lat": -41.13, "lng": -71.31, "reactors": ["CAREM", "RA-10"], "type": "研究機構"},
+    {"id": "bhel-india", "name": "BARC/NPCIL (印度)", "country": "India", "city": "孟買", "lat": 19.08, "lng": 72.88, "reactors": ["AHWR", "PHWR"], "type": "研究機構"},
+    {"id": "terrestrial-energy-can", "name": "Canadian Nuclear Safety Commission", "country": "Canada", "city": "渥太華", "lat": 45.42, "lng": -75.70, "reactors": [], "type": "監管機構"}
+  ]
+}

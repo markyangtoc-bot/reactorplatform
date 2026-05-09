@@ -1,0 +1,1766 @@
+{
+  "statusOptions": [
+    {
+      "id": "draft",
+      "label": "規劃中",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "active",
+      "label": "進行中",
+      "color": "#22c55e"
+    },
+    {
+      "id": "archived",
+      "label": "已存檔",
+      "color": "#64748b"
+    },
+    {
+      "id": "status-1776132617496",
+      "label": "第一階段評審",
+      "color": "#f59e0b"
+    }
+  ],
+  "projectTypes": [
+    {
+      "id": "type-default",
+      "label": "一般評量"
+    },
+    {
+      "id": "type-detailed",
+      "label": "細節評選"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-demo-001",
+      "name": "示範專案：次世代小型反應器評估",
+      "client": "台灣電力公司",
+      "status": "active",
+      "description": "初期概念驗證專案",
+      "createdAt": "2024-04-10T12:00:00Z",
+      "updatedAt": "2026-04-29T04:41:35.566Z",
+      "site": {
+        "name": "龍門場址",
+        "country": "Taiwan",
+        "lat": 25.0443,
+        "lng": 121.9442,
+        "elevation_m": 15
+      },
+      "reactorCandidates": [
+        "BWRX-300",
+        "NuScale VOYGR"
+      ],
+      "keGroups": [
+        {
+          "id": "K1",
+          "titleZh": "燃料循環",
+          "titleEn": "Fuel Cycle (KE2)",
+          "weight": 20,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K1-1776823646985-zocx",
+              "code": "2.1",
+              "name": "燃料規格與供應安全性",
+              "weight": 40,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "燃料規格完全符合 IAEA INFCIRC/153 低擴散風險標準，供應鏈具備至少 3 個以上獨立國際供應商，且保有 24 個月以上備料庫存；燃料運輸與保管符合 IAEA TS-R-1 規範。"
+                },
+                {
+                  "level": 4,
+                  "description": "燃料規格符合 IAEA 標準，具備 2 個以上國際供應商，供應鏈基本穩定，惟備料庫存少於 24 個月或部分依賴單一地區。"
+                },
+                {
+                  "level": 3,
+                  "description": "燃料規格原則符合 IAEA 標準，但高濃縮或特殊燃料成分（如 HALEU）導致供應商數量有限（1-2 家），供應鏈具中度地緣政治風險。"
+                },
+                {
+                  "level": 2,
+                  "description": "燃料需特殊加工或高濃縮（>5% U-235），國際供應商極少且高度依賴特定國家，供應連續性風險高。"
+                },
+                {
+                  "level": 1,
+                  "description": "燃料規格尚未定案或需高度機密/特殊核材料，目前無法建立穩定的商業供應鏈，擴散風險疑慮待解。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K1-1776823646985-t189",
+              "code": "2.2",
+              "name": "乏燃料管理與處置",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "乏燃料管理具備完整法規框架（符合 IAEA GSR Part 1 及 SSR-5），已有商業規模乾式貯存設施，且具備明確的最終處置路徑（如深地層處置）。"
+                },
+                {
+                  "level": 4,
+                  "description": "乏燃料管理具備成熟方案且符合 IAEA 標準，但最終處置路徑仍在規劃或尚未獲得監管批准。"
+                },
+                {
+                  "level": 3,
+                  "description": "乏燃料可採用現有設施進行短期貯存，但因燃料形態特殊（如球形燃料、熔鹽），長期管理路徑需客製化方案，成本與時程具有較高不確定性。"
+                },
+                {
+                  "level": 2,
+                  "description": "乏燃料形態高度特殊，需要全新設計的貯存技術，目前無商業實績，且監管框架尚未建立。"
+                },
+                {
+                  "level": 1,
+                  "description": "液態乏燃料或特殊廢棄物流之管理方案尚未定案，面臨重大技術與監管挑戰，缺乏可行的工業規模解決方案。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K1-1776823646985-p2tl",
+              "code": "2.3",
+              "name": "燃料利用率與週期",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "燃料燃耗深度 > 60 GWd/tU，換料週期超過 24 個月，燃料利用率達世界先進水準（容量因子 > 95% 下仍維持高效能），符合 IAEA TECDOC-1705 的先進燃料利用指標。"
+                },
+                {
+                  "level": 4,
+                  "description": "燃料燃耗 45-60 GWd/tU，換料週期 18-24 個月，燃料利用率高於傳統 LWR 平均水準，具競爭力。"
+                },
+                {
+                  "level": 3,
+                  "description": "燃料燃耗 30-45 GWd/tU，換料週期 12-18 個月，燃料利用率與現有商業反應器相當，無明顯優劣。"
+                },
+                {
+                  "level": 2,
+                  "description": "燃料燃耗低於 30 GWd/tU 或換料週期短於 12 個月，燃料利用效率相對較低，運轉成本受影響。"
+                },
+                {
+                  "level": 1,
+                  "description": "燃料利用率設計資訊尚不完整或換料設計仍在研究階段，無法與商業標準比較。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K2",
+          "titleZh": "核能安全",
+          "titleEn": "Nuclear Safety (KE3)",
+          "weight": 15,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K2-1776823646985-02um",
+              "code": "3.1",
+              "name": "非能動安全系統",
+              "weight": 40,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備完全非能動安全系統，無需外部電源或人工介入，依據 IAEA SSG-8 定義可維持安全冷卻超過 72 小時；具備多重防護層（In-vessel retention 或同等設計），CDF < 1E-7/ry。"
+                },
+                {
+                  "level": 4,
+                  "description": "具備非能動安全冷卻能力，可在無外部電源下維持安全狀態 72 小時，但需少量人工確認操作或具少量能動備援，整體安全裕度符合 IAEA SSG-30 第三代以上標準。"
+                },
+                {
+                  "level": 3,
+                  "description": "安全系統以能動為主輔以非能動備援，依 IAEA NS-R-1 標準可滿足設計基準事故，但全黑站事故或極端外部危害下，需依賴緊急電源或操作員介入。"
+                },
+                {
+                  "level": 2,
+                  "description": "以能動安全系統為主，非能動設計比例低，在全黑站事故情況下需在 8 小時內完成人工介入，設計基礎較舊，安全裕度有限。"
+                },
+                {
+                  "level": 1,
+                  "description": "安全系統設計尚在研究階段或嚴重仰賴操作員手動操作，尚未通過任何國際核安監管機構的設計審查。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K2-1776823646985-fwgw",
+              "code": "3.2",
+              "name": "核心損傷頻率 (CDF)",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "依據 IAEA INSAG-12，設計基準事故（DBE）下堆芯損傷頻率（CDF）< 1E-8/reactor-year，超設計基準事故（BDBA）大量放射性釋放頻率（LRF）< 1E-9/ry，具備世界最高安全水準。"
+                },
+                {
+                  "level": 4,
+                  "description": "CDF 介於 1E-7 至 1E-8/ry，LRF < 1E-8/ry，符合 IAEA INSAG-12 第三代進階反應器標準，安全分析完整。"
+                },
+                {
+                  "level": 3,
+                  "description": "CDF 介於 1E-6 至 1E-7/ry，符合 IAEA NS-R-1 最低要求，與現有商業第二代反應器相當，安全餘裕可接受。"
+                },
+                {
+                  "level": 2,
+                  "description": "CDF 尚未完成詳細評估，或基於初步設計估算介於 1E-5 至 1E-6/ry，安全分析完整性不足。"
+                },
+                {
+                  "level": 1,
+                  "description": "CDF 評估尚未啟動或資料不足以評估，設計安全性無法與 IAEA 標準比較。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K2-1776823646985-pno1",
+              "code": "3.3",
+              "name": "防護機制與多重性",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備符合 IAEA 縱深防禦（Defence-in-Depth）五層防護模型的完整設計，且每層均已通過監管方正式審查；嚴重事故管理程序（SAMG）完整，圍阻體設計可承受嚴重事故工況。"
+                },
+                {
+                  "level": 4,
+                  "description": "具備 IAEA 縱深防禦四至五層完整設計，SAMG 已草擬且通過初步審查，圍阻體設計達第三代以上標準。"
+                },
+                {
+                  "level": 3,
+                  "description": "具備 IAEA 縱深防禦三至四層，設計符合基本監管要求，但 SAMG 或圍阻體設計仍在研發優化中。"
+                },
+                {
+                  "level": 2,
+                  "description": "縱深防禦機制以前三層為主，第四、五層尚不完整，嚴重事故情景下的防護措施有限。"
+                },
+                {
+                  "level": 1,
+                  "description": "縱深防禦設計尚未完整定義，或因革命性設計概念而尚無法套用既有 IAEA 框架進行評估。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K3",
+          "titleZh": "核島設計與性能",
+          "titleEn": "Nuclear Island (KE4)",
+          "weight": 20,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K3-1776823646985-e7zw",
+              "code": "4.1",
+              "name": "電廠可用率與效率",
+              "weight": 40,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "設計容量因子目標 > 95%，計畫換料停機時間 < 21 天/次，電廠效率（熱效率）> 33%，且有具體商業運轉實績或成熟模擬驗證支持。"
+                },
+                {
+                  "level": 4,
+                  "description": "容量因子目標 90-95%，換料停機時間 21-30 天，熱效率 30-33%，基於同源技術具備成熟商業實績基礎。"
+                },
+                {
+                  "level": 3,
+                  "description": "容量因子目標 85-90%，換料停機時間 30-45 天，熱效率 28-30%，符合現有商業 LWR 平均水準。"
+                },
+                {
+                  "level": 2,
+                  "description": "容量因子目標 < 85% 或仍在設計優化中，換料停機時間預測不確定性高，相關數據主要來自模擬而非實測。"
+                },
+                {
+                  "level": 1,
+                  "description": "效能參數尚未確定或設計成熟度不足以提供可靠預測，商業可行性待驗證。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K3-1776823646985-aulo",
+              "code": "4.2",
+              "name": "模組化施工優勢",
+              "weight": 60,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "完全模組化設計，工廠預製程度 > 70%，現場工期 < 24 個月，模組運輸可採鐵路或標準海運，建設計畫具備成熟工程路徑（EPC 合約可執行）。"
+                },
+                {
+                  "level": 4,
+                  "description": "高度模組化，工廠預製程度 50-70%，現場工期 24-36 個月，運輸邏輯已規劃，工程計畫具體可行。"
+                },
+                {
+                  "level": 3,
+                  "description": "部分模組化，工廠預製程度 30-50%，現場工期 36-48 個月，與傳統核電廠相比有一定優勢但尚未達到 SMR 標準模組化水準。"
+                },
+                {
+                  "level": 2,
+                  "description": "模組化程度有限，大量現場建設工作，工期預測不確定性高，一次性 (FOAK) 風險明顯。"
+                },
+                {
+                  "level": 1,
+                  "description": "模組化方案尚在設計中，現場建設計畫尚未確定，無法提供具體工期預測。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K4",
+          "titleZh": "平衡廠設計與電網整合",
+          "titleEn": "Grid Integration (KE5)",
+          "weight": 15,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K4-1776823646985-qsqi",
+              "code": "5.1",
+              "name": "電網負荷跟隨能力",
+              "weight": 50,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備 > 5%/min 的功率爬升/下降速率，可完全跟隨電網需求，適合作為調峰電廠；已有模擬或同源機組實測數據驗證，符合 IAEA TECDOC-1396 電網整合要求。"
+                },
+                {
+                  "level": 4,
+                  "description": "功率調節速率 3-5%/min，可部分承擔電網調頻任務，比傳統核電廠更靈活，適合台灣或加拿大孤島/獨立電網。"
+                },
+                {
+                  "level": 3,
+                  "description": "功率調節速率 1-3%/min，以基載運轉為主，但具備一定的負載追隨能力，符合 IAEA 對 SMR 電網整合的基本期望。"
+                },
+                {
+                  "level": 2,
+                  "description": "功率調節速率 < 1%/min 或主要設計為定功率運轉，電網靈活性有限，不適合高再生能源占比電網。"
+                },
+                {
+                  "level": 1,
+                  "description": "電網整合分析尚未完成，或因設計限制（如熔鹽熱容量大）使快速功率調節面臨技術挑戰。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K4-1776823646985-jell",
+              "code": "5.2",
+              "name": "散熱與冷卻水需求",
+              "weight": 50,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "可採用全乾式冷卻（Air-cooled condenser），無需水源，適合內陸或缺水地區部署，冷卻效率損失 < 5%，符合 IAEA SSG-35 選址要求的最高標準。"
+                },
+                {
+                  "level": 4,
+                  "description": "可採用混合冷卻（濕乾混合），用水量比傳統核電廠減少 > 50%，適合水資源有限的選址，部署靈活性顯著提升。"
+                },
+                {
+                  "level": 3,
+                  "description": "採用傳統冷卻水系統，但因設計效率較高，用水量與同輸出傳統核電廠相當或略低，對冷卻水源有一定依賴。"
+                },
+                {
+                  "level": 2,
+                  "description": "用水量較大（因熱效率較低或設計因素），選址受冷卻水源嚴格限制，不適合乾旱或內陸地區。"
+                },
+                {
+                  "level": 1,
+                  "description": "冷卻系統設計尚未確定，或因特殊冷卻劑（如熔鹽二次迴路）導致冷卻需求評估尚不完整。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K5",
+          "titleZh": "技術成熟度",
+          "titleEn": "Tech Readiness (KE8)",
+          "weight": 15,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K5-1776823646985-issg",
+              "code": "8.1",
+              "name": "設計與執照申請進度",
+              "weight": 40,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "設計完全基於已通過監管機構設計認證（Design Certification）的已驗證技術，執照申請路徑 < 3 年可完成，且已取得建造許可（Construction License）或同等許可。"
+                },
+                {
+                  "level": 4,
+                  "description": "設計基於已通過前期審查（Pre-licensing）或已提交設計認證申請的技術，執照申請路徑具體且預計 3-5 年完成，監管機構已啟動技術審查。"
+                },
+                {
+                  "level": 3,
+                  "description": "設計已提交概念審查（Vendor Design Review / Early Review），尚未正式提交設計認證申請，執照申請路徑預計需 5-8 年，監管不確定性中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "設計處於初步審查或概念設計（Pre-conceptual Design）階段，尚未提交任何正式監管審查申請，執照路徑高度不確定，預計 > 8 年。"
+                },
+                {
+                  "level": 1,
+                  "description": "設計成熟度不足以啟動正式監管審查，核心技術仍在研發中，執照申請路徑完全不確定。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K5-1776823646985-nl19",
+              "code": "8.2",
+              "name": "供應鏈與製造能力",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備完整的全球製造商網絡，關鍵組件（壓力槽、燃料組件、蒸汽發生器等）已有超過 3 家具備核心資格的供應商，且量產能力已通過 ASME/ISO 核等認證。"
+                },
+                {
+                  "level": 4,
+                  "description": "主要組件具備 2-3 家核級供應商，量產計畫具體，部分組件可延用現有核電廠供應鏈，FOAK 風險可控。"
+                },
+                {
+                  "level": 3,
+                  "description": "部分關鍵組件具備 1-2 家供應商，需進行供應鏈開發，量產成本尚不明確，FOAK 風險中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "關鍵組件需從頭開發製造商認證，大量核心技術仰賴單一供應商，供應鏈脆弱性高，FOAK 成本不確定性大。"
+                },
+                {
+                  "level": 1,
+                  "description": "供應鏈幾乎尚未建立，核心材料或組件（如特殊合金、氟化鹽）的製造商資格認證工作尚未啟動。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K5-1776823646985-kfc1",
+              "code": "8.3",
+              "name": "全球部署與計畫時程",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "全球已有超過 3 個以上的定址或建造計畫，首台機組建造合約已簽訂，時程表具體且獲得政府或機構資金支持，預計 2035 年前商業運轉。"
+                },
+                {
+                  "level": 4,
+                  "description": "全球有 2-3 個具體部署計畫且獲得確定資金，首台機組計畫於 2035-2040 年間商業運轉，主要里程碑時程已公布。"
+                },
+                {
+                  "level": 3,
+                  "description": "有 1-2 個具體的合作意向（MOU/LOI），首台機組商業運轉時程預計 2035-2040 年代，但仍缺乏具約束力的融資承諾。"
+                },
+                {
+                  "level": 2,
+                  "description": "部署計畫尚屬初步階段，主要依靠政府研發補助，無具體客戶合約，商業運轉時程預測超過 2040 年。"
+                },
+                {
+                  "level": 1,
+                  "description": "尚無具體部署計畫或合作夥伴，商業化時程完全不確定，技術開發仍在早期研究階段。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K6",
+          "titleZh": "經濟性與融資",
+          "titleEn": "Economics (KE10)",
+          "weight": 15,
+          "enabled": true,
+          "items": [
+            {
+              "id": "K6-1776823646985-wuuy",
+              "code": "10.1",
+              "name": "均化發電成本 (LCOE)",
+              "weight": 40,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "LCOE 目標 < $50/MWh（2024 年美元），具備詳細且可信的成本分解模型，基於成熟供應鏈與批次建設假設，已有獨立第三方機構（如 OECD NEA）驗證。"
+                },
+                {
+                  "level": 4,
+                  "description": "LCOE 目標 $50-70/MWh，成本模型基於合理工程假設，具備同源技術的部分成本實績支持，整體估算可信度較高。"
+                },
+                {
+                  "level": 3,
+                  "description": "LCOE 目標 $70-100/MWh，或成本估算高度依賴首台機組（FOAK）以外的規模效益假設，不確定性較大。"
+                },
+                {
+                  "level": 2,
+                  "description": "LCOE 目標 > $100/MWh 或成本估算可信度低，缺乏詳細的獨立工程成本分析支持。"
+                },
+                {
+                  "level": 1,
+                  "description": "LCOE 尚未進行詳細估算，或因技術成熟度不足而無法提供有意義的成本預測。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K6-1776823646985-8nzn",
+              "code": "10.2",
+              "name": "資本成本與融資條件",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "已獲主要國際金融機構（如 MDB、出口信貸機構）確定融資承諾，政府擔保已到位，投資風險等級 A 以上，CAPEX 造價明確且具備 EPC 固定總價合約可行性。"
+                },
+                {
+                  "level": 4,
+                  "description": "已有大型戰略投資者（能源公司或國家電力公司）正式投資，但仍缺乏完整的項目融資（Project Finance）結構，CAPEX 估算具可信度。"
+                },
+                {
+                  "level": 3,
+                  "description": "主要依靠開發商資本與政府研發補助，尚未建立項目融資結構，商業融資可行性有待確認，投資風險評估為中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "融資高度依賴政府補助，尚未吸引大型商業投資者，CAPEX 估算不確定性大，商業融資可行性存疑。"
+                },
+                {
+                  "level": 1,
+                  "description": "融資計畫尚不完整，幾乎完全依賴政府資助，缺乏商業融資吸引力，投資風險最高。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            },
+            {
+              "id": "K6-1776823646985-tznh",
+              "code": "10.3",
+              "name": "運維成本預估 (O&M)",
+              "weight": 30,
+              "rationaleForWeights": "",
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "運維人力 < 50 人/機組，年度 O&M 成本 < $15/MWh，具備遠端監控/自動化運轉能力，無需大規模現場維護團隊，具備成熟維護合約範本。"
+                },
+                {
+                  "level": 4,
+                  "description": "運維人力 50-100 人/機組，年度 O&M 成本 $15-25/MWh，自動化程度較高，維護計畫具體可行。"
+                },
+                {
+                  "level": 3,
+                  "description": "運維人力 100-150 人/機組，年度 O&M 成本 $25-35/MWh，與現有商業核電廠相當，無特殊優劣。"
+                },
+                {
+                  "level": 2,
+                  "description": "運維人力 > 150 人/機組，或特殊維護需求（如熔鹽更換、特殊合金維修）導致 O&M 成本顯著高於傳統核電廠。"
+                },
+                {
+                  "level": 1,
+                  "description": "運維成本無法合理估算，因設計高度創新而缺乏維護商業實績，O&M 風險極高。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": null,
+                  "moreInfo": ""
+                },
+                {
+                  "reactorId": "NuScale VOYGR",
+                  "score": null,
+                  "moreInfo": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K7",
+          "titleZh": "廠址與環境",
+          "titleEn": "",
+          "weight": 0,
+          "enabled": false,
+          "items": []
+        },
+        {
+          "id": "K8",
+          "titleZh": "非電力應用",
+          "titleEn": "",
+          "weight": 0,
+          "enabled": false,
+          "items": []
+        },
+        {
+          "id": "K9",
+          "titleZh": "保防與輻射防護",
+          "titleEn": "",
+          "weight": 0,
+          "enabled": false,
+          "items": []
+        },
+        {
+          "id": "K10",
+          "titleZh": "專案交付能力",
+          "titleEn": "",
+          "weight": 0,
+          "enabled": false,
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "proj-smr-top3-comparison",
+      "name": "加拿大 DNNP 比選場景：SMR 三強技術對比 (BWRX-300 / Xe-100 / IMSR)",
+      "client": "Ontario Power Generation (OPG)",
+      "status": "archived",
+      "description": "重現 2021 年安大略電力公司 (OPG) 針對 Darlington 核電場址進行的 SMR 比選場景。",
+      "createdAt": "2026-04-16T13:29:00Z",
+      "updatedAt": "2026-05-06T03:03:00.520Z",
+      "site": {
+        "name": "Darlington New Nuclear Project (DNNP)",
+        "country": "Canada",
+        "lat": 43.87,
+        "lng": -78.71,
+        "elevation_m": 75
+      },
+      "reactorCandidates": [
+        "Xe-100",
+        "IMSR400",
+        "BWRX-300"
+      ],
+      "keGroups": [
+        {
+          "id": "K1",
+          "titleZh": "燃料循環",
+          "titleEn": "Fuel Cycle (KE2)",
+          "enabled": true,
+          "weight": 15,
+          "items": [
+            {
+              "id": "KE2-1",
+              "code": "2.1",
+              "name": "燃料規格與供應安全性",
+              "weight": 40,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "燃料規格完全符合 IAEA INFCIRC/153 低擴散風險標準，供應鏈具備至少 3 個以上獨立國際供應商，且保有 24 個月以上備料庫存；燃料運輸與保管符合 IAEA TS-R-1 規範。"
+                },
+                {
+                  "level": 4,
+                  "description": "燃料規格符合 IAEA 標準，具備 2 個以上國際供應商，供應鏈基本穩定，惟備料庫存少於 24 個月或部分依賴單一地區。"
+                },
+                {
+                  "level": 3,
+                  "description": "燃料規格原則符合 IAEA 標準，但高濃縮或特殊燃料成分（如 HALEU）導致供應商數量有限（1-2 家），供應鏈具中度地緣政治風險。"
+                },
+                {
+                  "level": 2,
+                  "description": "燃料需特殊加工或高濃縮（>5% U-235），國際供應商極少且高度依賴特定國家，供應連續性風險高。"
+                },
+                {
+                  "level": 1,
+                  "description": "燃料規格尚未定案或需高度機密/特殊核材料，目前無法建立穩定的商業供應鏈，擴散風險疑慮待解。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "採用 < 5% 低濃縮鈾 (LEU)，與現有 BWR 燃料相容，全球供應商超過 5 家（Framatome、Global Nuclear Fuel 等），符合 IAEA INFCIRC/153 標準，無擴散疑慮。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 2,
+                  "moreInfo": "依賴 HALEU（5-20% 高濃縮），2021 年時全球僅 URENCO 旗下 Enrichment Technology Company 具備商業標準供應能力，地緣政治風險高，俄羅斯 TENEX 為重要但風險性供應商。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 3,
+                  "moreInfo": "初期使用低濃縮 LiF-ThF-UF 熔鹽燃料，燃料加工需特殊氟化設施，全球具備商業化處理能力者不超過 2 家，供應鏈尚未成熟。"
+                }
+              ]
+            },
+            {
+              "id": "KE2-2",
+              "code": "2.2",
+              "name": "乏燃料管理與處置",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "乏燃料管理具備完整法規框架（符合 IAEA GSR Part 1 及 SSR-5），已有商業規模乾式貯存設施，且具備明確的最終處置路徑（如深地層處置）。"
+                },
+                {
+                  "level": 4,
+                  "description": "乏燃料管理具備成熟方案且符合 IAEA 標準，但最終處置路徑仍在規劃或尚未獲得監管批准。"
+                },
+                {
+                  "level": 3,
+                  "description": "乏燃料可採用現有設施進行短期貯存，但因燃料形態特殊（如球形燃料、熔鹽），長期管理路徑需客製化方案，成本與時程具有較高不確定性。"
+                },
+                {
+                  "level": 2,
+                  "description": "乏燃料形態高度特殊，需要全新設計的貯存技術，目前無商業實績，且監管框架尚未建立。"
+                },
+                {
+                  "level": 1,
+                  "description": "液態乏燃料或特殊廢棄物流之管理方案尚未定案，面臨重大技術與監管挑戰，缺乏可行的工業規模解決方案。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "標準 BWR 燃料組件，乾式貯存技術成熟（NUHOMS、Holtec 等），加拿大 NWMO 的最終處置計畫可完全適用，全球具備豐富商業實績。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "TRISO 封裝燃料物理特性極佳，放射性風險低，但球形燃料的貯存容器設計需客製化，尚無大規模商業實績，NRC 審查中。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "熔鹽乏燃料處理涉及氟化物廢棄物流，處理設施設計高度客製化，目前缺乏商業規模驗證，且氟化物腐蝕問題會顯著增加貯存設施設計難度。"
+                }
+              ]
+            },
+            {
+              "id": "KE2-3",
+              "code": "2.3",
+              "name": "燃料利用率與週期",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "燃料燃耗深度 > 60 GWd/tU，換料週期超過 24 個月，燃料利用率達世界先進水準（容量因子 > 95% 下仍維持高效能），符合 IAEA TECDOC-1705 的先進燃料利用指標。"
+                },
+                {
+                  "level": 4,
+                  "description": "燃料燃耗 45-60 GWd/tU，換料週期 18-24 個月，燃料利用率高於傳統 LWR 平均水準，具競爭力。"
+                },
+                {
+                  "level": 3,
+                  "description": "燃料燃耗 30-45 GWd/tU，換料週期 12-18 個月，燃料利用率與現有商業反應器相當，無明顯優劣。"
+                },
+                {
+                  "level": 2,
+                  "description": "燃料燃耗低於 30 GWd/tU 或換料週期短於 12 個月，燃料利用效率相對較低，運轉成本受影響。"
+                },
+                {
+                  "level": 1,
+                  "description": "燃料利用率設計資訊尚不完整或換料設計仍在研究階段，無法與商業標準比較。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 3,
+                  "moreInfo": "設計燃耗約 45 GWd/tU，換料週期 24 個月（設計目標），標準 BWR 水準，無特殊優勢但完全符合商業需求。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 4,
+                  "moreInfo": "TRISO 球形燃料設計燃耗 > 100,000 MWd/tHM（等效約 80-100 GWd/tU），持續添料運轉，燃料利用率顯著優於 LWR，理論上達 5 分但商業驗證尚未完成。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 4,
+                  "moreInfo": "熔鹽燃料可線上連續添加，理論燃料利用率極高，但工業規模的燃料處理效率尚未完全驗證，預估商業化後可達 4 分水準。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K2",
+          "titleZh": "核能安全",
+          "titleEn": "Nuclear Safety (KE3)",
+          "enabled": true,
+          "weight": 20,
+          "items": [
+            {
+              "id": "KE3-1",
+              "code": "3.1",
+              "name": "非能動安全系統",
+              "weight": 40,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備完全非能動安全系統，無需外部電源或人工介入，依據 IAEA SSG-8 定義可維持安全冷卻超過 72 小時；具備多重防護層（In-vessel retention 或同等設計），CDF < 1E-7/ry。"
+                },
+                {
+                  "level": 4,
+                  "description": "具備非能動安全冷卻能力，可在無外部電源下維持安全狀態 72 小時，但需少量人工確認操作或具少量能動備援，整體安全裕度符合 IAEA SSG-30 第三代以上標準。"
+                },
+                {
+                  "level": 3,
+                  "description": "安全系統以能動為主輔以非能動備援，依 IAEA NS-R-1 標準可滿足設計基準事故，但全黑站事故或極端外部危害下，需依賴緊急電源或操作員介入。"
+                },
+                {
+                  "level": 2,
+                  "description": "以能動安全系統為主，非能動設計比例低，在全黑站事故情況下需在 8 小時內完成人工介入，設計基礎較舊，安全裕度有限。"
+                },
+                {
+                  "level": 1,
+                  "description": "安全系統設計尚在研究階段或嚴重仰賴操作員手動操作，尚未通過任何國際核安監管機構的設計審查。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "基於 ESBWR 非能動安全設計（已獲 NRC DC 認證），採用重力驅動冷卻水、非能動殘熱移除（PCCS），可達 72 小時無操作員介入，設計基準完善。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 5,
+                  "moreInfo": "TRISO 燃料本身即為天然安全屏障（熔點 > 1600°C，遠超設計基準溫度），具備固有安全特性，即使冷卻完全喪失也不會發生堆芯熔毀，符合 IAEA 最高安全標準。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 5,
+                  "moreInfo": "熔鹽低壓運行（常壓），具備被動排鹽槽（Drain Tank）設計，失去冷卻時鹽液自動凝固，物理上不存在傳統堆芯熔毀場景，具備固有安全特性。"
+                }
+              ]
+            },
+            {
+              "id": "KE3-2",
+              "code": "3.2",
+              "name": "核心損傷頻率 (CDF)",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "依據 IAEA INSAG-12，設計基準事故（DBE）下堆芯損傷頻率（CDF）< 1E-8/reactor-year，超設計基準事故（BDBA）大量放射性釋放頻率（LRF）< 1E-9/ry，具備世界最高安全水準。"
+                },
+                {
+                  "level": 4,
+                  "description": "CDF 介於 1E-7 至 1E-8/ry，LRF < 1E-8/ry，符合 IAEA INSAG-12 第三代進階反應器標準，安全分析完整。"
+                },
+                {
+                  "level": 3,
+                  "description": "CDF 介於 1E-6 至 1E-7/ry，符合 IAEA NS-R-1 最低要求，與現有商業第二代反應器相當，安全餘裕可接受。"
+                },
+                {
+                  "level": 2,
+                  "description": "CDF 尚未完成詳細評估，或基於初步設計估算介於 1E-5 至 1E-6/ry，安全分析完整性不足。"
+                },
+                {
+                  "level": 1,
+                  "description": "CDF 評估尚未啟動或資料不足以評估，設計安全性無法與 IAEA 標準比較。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "GE-Hitachi 公布設計目標 CDF ~1E-8/ry，基於 ESBWR 已認證設計（NRC 設計認證完成），安全分析完整度最高，數據可信度最高。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 5,
+                  "moreInfo": "X-energy 報告 CDF 極低（TRISO 固有安全消除熔毀場景），雖商業設計仍在審查中，但燃料特性從根本上消除了絕大多數嚴重事故進行路徑，理論安全水準最高。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 3,
+                  "moreInfo": "熔鹽設計理論上 CDF 極低，但 Terrestrial Energy 的 CDF 詳細計算尚未完成完整的 Level 2 PSA，且熔鹽腐蝕對安全系統可靠度的長期影響尚不明確。"
+                }
+              ]
+            },
+            {
+              "id": "KE3-3",
+              "code": "3.3",
+              "name": "防護機制與多重性",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備符合 IAEA 縱深防禦（Defence-in-Depth）五層防護模型的完整設計，且每層均已通過監管方正式審查；嚴重事故管理程序（SAMG）完整，圍阻體設計可承受嚴重事故工況。"
+                },
+                {
+                  "level": 4,
+                  "description": "具備 IAEA 縱深防禦四至五層完整設計，SAMG 已草擬且通過初步審查，圍阻體設計達第三代以上標準。"
+                },
+                {
+                  "level": 3,
+                  "description": "具備 IAEA 縱深防禦三至四層，設計符合基本監管要求，但 SAMG 或圍阻體設計仍在研發優化中。"
+                },
+                {
+                  "level": 2,
+                  "description": "縱深防禦機制以前三層為主，第四、五層尚不完整，嚴重事故情景下的防護措施有限。"
+                },
+                {
+                  "level": 1,
+                  "description": "縱深防禦設計尚未完整定義，或因革命性設計概念而尚無法套用既有 IAEA 框架進行評估。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "基於 ESBWR 成成熟工程，五層縱深防禦完整，SAMG 已具備，圍阻體採用先進設計（無需大型採納性圍阻體建築），符合 IAEA NS-R-1 全項要求。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 5,
+                  "moreInfo": "TRISO 燃料顆粒本身即為第一到第三道屏障，加上石墨基質與耐壓容器，多重屏障概念從燃料粒子層面實現，安全系統層次最完整。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 3,
+                  "moreInfo": "熔鹽設計打破傳統縱深防禦框架，部分傳統屏障概念不適用，CNSC 的監管適應性分析仍持續進行，整體防護評估尚不完整。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K3",
+          "titleZh": "核島設計與性能",
+          "titleEn": "Nuclear Island (KE4)",
+          "enabled": true,
+          "weight": 20,
+          "items": [
+            {
+              "id": "KE4-1",
+              "code": "4.1",
+              "name": "電廠可用率與效率",
+              "weight": 40,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "設計容量因子目標 > 95%，計畫換料停機時間 < 21 天/次，電廠效率（熱效率）> 33%，且有具體商業運轉實績或成熟模擬驗證支持。"
+                },
+                {
+                  "level": 4,
+                  "description": "容量因子目標 90-95%，換料停機時間 21-30 天，熱效率 30-33%，基於同源技術具備成熟商業實績基礎。"
+                },
+                {
+                  "level": 3,
+                  "description": "容量因子目標 85-90%，換料停機時間 30-45 天，熱效率 28-30%，符合現有商業 LWR 平均水準。"
+                },
+                {
+                  "level": 2,
+                  "description": "容量因子目標 < 85% 或仍在設計優化中，換料停機時間預測不確定性高，相關數據主要來自模擬而非實測。"
+                },
+                {
+                  "level": 1,
+                  "description": "效能參數尚未確定或設計成熟度不足以提供可靠預測，商業可行性待驗證。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "GEH 設計目標容量因子 95%，換料週期 24 個月，計劃停機 < 14 天，熱效率約 33%，基於 BWR 系列的豐富商業實績，數據可信度高。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 4,
+                  "moreInfo": "設計目標容量因子 > 95%（連續添料無需定期換料停機），熱效率約 40%（高溫氣冷堆優勢），但缺少商業規模實績支持，屬設計預測值。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "首台商業運轉機組預期容量因子目標較保守（約 85%），高溫運作的材料腐蝕問題可能導致非計畫停機，熱效率約 46%（高溫優勢），但可用率高度不確定。"
+                }
+              ]
+            },
+            {
+              "id": "KE4-2",
+              "code": "4.2",
+              "name": "模組化施工優勢",
+              "weight": 60,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "完全模組化設計，工廠預製程度 > 70%，現場工期 < 24 個月，模組運輸可採鐵路或標準海運，建設計畫具備成熟工程路徑（EPC 合約可執行）。"
+                },
+                {
+                  "level": 4,
+                  "description": "高度模組化，工廠預製程度 50-70%，現場工期 24-36 個月，運輸邏輯已規劃，工程計畫具體可行。"
+                },
+                {
+                  "level": 3,
+                  "description": "部分模組化，工廠預製程度 30-50%，現場工期 36-48 個月，與傳統核電廠相比有一定優勢但尚未達到 SMR 標準模組化水準。"
+                },
+                {
+                  "level": 2,
+                  "description": "模組化程度有限，大量現場建設工作，工期預測不確定性高，一次性 (FOAK) 風險明顯。"
+                },
+                {
+                  "level": 1,
+                  "description": "模組化方案尚在設計中，現場建設計畫尚未確定，無法提供具體工期預測。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "GEH 公布設計目標：工廠預製 66% 以上，現場工期 36 個月（FOAK）目標縮短至 24 個月（後續機組），模組最大重量 300 噸（可鐵路運輸），OPG Darlington 的工程採購計畫已具體啟動。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 4,
+                  "moreInfo": "設計高度模組化（每模組 80MW，4 模組組成 320MW 廠），工廠預製比例高，但具體工期數據較少，整體施工計畫仍在細化中。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 3,
+                  "moreInfo": "熔鹽迴路需要特殊現場施工（高溫管線、鹽槽等），模組化優勢相對有限，Terrestrial Energy 未公布詳細的模組化工程時程，建設計畫成熟度不足。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K4",
+          "titleZh": "平衡廠設計與電網整合",
+          "titleEn": "Grid Integration (KE5)",
+          "enabled": true,
+          "weight": 15,
+          "items": [
+            {
+              "id": "KE5-1",
+              "code": "5.1",
+              "name": "電網負荷跟隨能力",
+              "weight": 50,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備 > 5%/min 的功率爬升/下降速率，可完全跟隨電網需求，適合作為調峰電廠；已有模擬或同源機組實測數據驗證，符合 IAEA TECDOC-1396 電網整合要求。"
+                },
+                {
+                  "level": 4,
+                  "description": "功率調節速率 3-5%/min，可部分承擔電網調頻任務，比傳統核電廠更靈活，適合台灣或加拿大孤島/獨立電網。"
+                },
+                {
+                  "level": 3,
+                  "description": "功率調節速率 1-3%/min，以基載運轉為主，但具備一定的負載追隨能力，符合 IAEA 對 SMR 電網整合的基本期望。"
+                },
+                {
+                  "level": 2,
+                  "description": "功率調節速率 < 1%/min 或主要設計為定功率運轉，電網靈活性有限，不適合高再生能源占比電網。"
+                },
+                {
+                  "level": 1,
+                  "description": "電網整合分析尚未完成，或因設計限制（如熔鹽熱容量大）使快速功率調節面臨技術挑戰。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "BWR 系列具備負載追隨能力，GEH 設計目標 5%/min，300MW 規模非常適合 Darlington 電網需求（安大略獨立電力系統 IESO 要求），已有 BWR 實際電網調節往績。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 5,
+                  "moreInfo": "氣冷堆熱容量小、響應快，設計可達 > 5%/min，80MW 模組組合極具彈性，適合作為部分調峰電源，是三者中電網靈活性最高的設計。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 3,
+                  "moreInfo": "熔鹽反應堆熱容量大，功率調節速率受限，主要作為基載電廠運轉，不適合快速負載追隨，但可提供高溫製程熱（非電力應用），整體電網靈活性中等。"
+                }
+              ]
+            },
+            {
+              "id": "KE5-2",
+              "code": "5.2",
+              "name": "散熱與冷卻水需求",
+              "weight": 50,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "可採用全乾式冷卻（Air-cooled condenser），無需水源，適合內陸或缺水地區部署，冷卻效率損失 < 5%，符合 IAEA SSG-35 選址要求的最高標準。"
+                },
+                {
+                  "level": 4,
+                  "description": "可採用混合冷卻（濕乾混合），用水量比傳統核電廠減少 > 50%，適合水資源有限的選址，部署靈活性顯著提升。"
+                },
+                {
+                  "level": 3,
+                  "description": "採用傳統冷卻水系統，但因設計效率較高，用水量與同輸出傳統核電廠相當或略低，對冷卻水源有一定依賴。"
+                },
+                {
+                  "level": 2,
+                  "description": "用水量較大（因熱效率較低或設計因素），選址受冷卻水源嚴格限制，不適合乾旱或內陸地區。"
+                },
+                {
+                  "level": 1,
+                  "description": "冷卻系統設計尚未確定，或因特殊冷卻劑（如熔鹽二次迴路）導致冷卻需求評估尚不完整。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 3,
+                  "moreInfo": "採用傳統冷卻水設計（蒸發冷卻塔），Darlington 臨近安大略湖，水源充足，但乾式冷卻選項尚未作為主要設計方案，用水量與傳統 LWR 相當。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 5,
+                  "moreInfo": "高溫氣冷堆設計天然適合乾式空冷，不需要大量冷卻水，可在沙漠或內陸地區部署，是三者中最不受選址水源限制的設計，OPG 評估中受此優點加分。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 4,
+                  "moreInfo": "高溫運轉使散熱效率較高，需要的冷卻水量少於傳統 LWR，可採用較小規模的冷卻設施，選址靈活性較 BWRX-300 好，但仍需一定水源。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K5",
+          "titleZh": "技術成熟度",
+          "titleEn": "Tech Readiness (KE8)",
+          "enabled": true,
+          "weight": 15,
+          "items": [
+            {
+              "id": "KE8-1",
+              "code": "8.1",
+              "name": "設計與執照申請進度",
+              "weight": 40,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "設計完全基於已通過監管機構設計認證（Design Certification）的已驗證技術，執照申請路徑 < 3 年可完成，且已取得建造許可（Construction License）或同等許可。"
+                },
+                {
+                  "level": 4,
+                  "description": "設計基於已通過前期審查（Pre-licensing）或已提交設計認證申請的技術，執照申請路徑具體且預計 3-5 年完成，監管機構已啟動技術審查。"
+                },
+                {
+                  "level": 3,
+                  "description": "設計已提交概念審查（Vendor Design Review / Early Review），尚未正式提交設計認證申請，執照申請路徑預計需 5-8 年，監管不確定性中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "設計處於初步審查或概念設計（Pre-conceptual Design）階段，尚未提交任何正式監管審查申請，執照路徑高度不確定，預計 > 8 年。"
+                },
+                {
+                  "level": 1,
+                  "description": "設計成熟度不足以啟動正式監管審查，核心技術仍在研發中，執照申請路徑完全不確定。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "完全基於 GE 已獲 NRC 設計認證（2014 年）的 ESBWR，BWRX-300 本身已在 NRC 完成 Pre-application 並啟動 DC 申請；CNSC 與 UK ONR 也已進行聯合前期審查，執照路徑最清晰，Darlington 建造許可預計 2025-2027 年取得。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "已獲 DOE Advanced Reactor Demonstration Program (ARDP) 資助，NRC 預申請（Pre-app）會議持續進行中，但尚未提交正式設計認證（DC）申請，執照路徑預計需 5-7 年，2021 年時成熟度顯著低於 BWRX-300。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "Terrestrial Energy 已完成 CNSC Phase 1 Vendor Design Review（2019），但 Phase 2 中因熔鹽材料問題受阻，正式執照申請路徑高度不確定，2021 年時距商業運轉仍有極大技術與監管障礙。"
+                }
+              ]
+            },
+            {
+              "id": "KE8-2",
+              "code": "8.2",
+              "name": "供應鏈與製造能力",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "具備完整的全球製造商網絡，關鍵組件（壓力槽、燃料組件、蒸汽發生器等）已有超過 3 家具備核心資格的供應商，且量產能力已通過 ASME/ISO 核等認證。"
+                },
+                {
+                  "level": 4,
+                  "description": "主要組件具備 2-3 家核級供應商，量產計畫具體，部分組件可延用現有核電廠供應鏈，FOAK 風險可控。"
+                },
+                {
+                  "level": 3,
+                  "description": "部分關鍵組件具備 1-2 家供應商，需進行供應鏈開發，量產成本尚不明確，FOAK 風險中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "關鍵組件需從頭開發製造商認證，大量核心技術仰賴單一供應商，供應鏈脆弱性高，FOAK 成本不確定性大。"
+                },
+                {
+                  "level": 1,
+                  "description": "供應鏈幾乎尚未建立，核心材料或組件（如特殊合金、氟化鹽）的製造商資格認證工作尚未啟動。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "GE-Hitachi 擁有全球最完整的 LWR 供應鏈網絡，壓力容器可由三菱重工、Japan Steel Works 等製造，燃料由 Global Nuclear Fuel (GNF) 量產，可與現有 BWR 工廠共用諸多標準組件，FOAK 成本最低。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "TRISO 燃料製造正由 X-energy 與 BWXT 進行量產規模驗證（HALEU TRISO 2022 年實現首批量產），但整體供應鏈仍需大量開發，氦氣迴路組件製造商有限。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "熔鹽系統所需的特殊耐腐蝕合金（Hastelloy N 及改良型）製造商極少，且需要全新的鹽循環設備製造能力，供應鏈幾乎需從零建立，商業化製造成本高度不確定。"
+                }
+              ]
+            },
+            {
+              "id": "KE8-3",
+              "code": "8.3",
+              "name": "全球部署與計畫時程",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "全球已有超過 3 個以上的定址或建造計畫，首台機組建造合約已簽訂，時程表具體且獲得政府或機構資金支持，預計 2035 年前商業運轉。"
+                },
+                {
+                  "level": 4,
+                  "description": "全球有 2-3 個具體部署計畫且獲得確定資金，首台機組計畫於 2035-2040 年間商業運轉，主要里程碑時程已公布。"
+                },
+                {
+                  "level": 3,
+                  "description": "有 1-2 個具體的合作意向（MOU/LOI），首台機組商業運轉時程預計 2035-2040 年代，但仍缺乏具約束力的融資承諾。"
+                },
+                {
+                  "level": 2,
+                  "description": "部署計畫尚屬初步階段，主要依靠政府研發補助，無具體客戶合約，商業運轉時程預測超過 2040 年。"
+                },
+                {
+                  "level": 1,
+                  "description": "尚無具體部署計畫或合作夥伴，商業化時程完全不確定，技術開發仍在早期研究階段。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "截至 2021 年已有 OPG（加拿大）、PKN Orlen（波蘭）、Fermi Energia（愛沙尼亞）等多個具體合作計畫，首台機組 Darlington DNNP 建造許可申請已提交，為三者中全球部署確定性最高的機型。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "已獲 DOE ARDP 資助，與 Dow Chemical 簽訂部署 MOU（德州工業園區），但正式建造合約尚未簽署，2021 年時首台機組商業運轉計畫仍屬 2030 年代中期，時程不確定性中等。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "Terrestrial Energy 主要依賴加拿大自然資源部研發補助，2021 年時尚無具體客戶合約，英國 HM Government 的興趣仍屬初步探索，商業運轉時程被評估為 2030 年代後期，是三者中確定性最低的。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K6",
+          "titleZh": "經濟性與融資",
+          "titleEn": "Economics (KE10)",
+          "enabled": true,
+          "weight": 15,
+          "items": [
+            {
+              "id": "KE10-1",
+              "code": "10.1",
+              "name": "均化發電成本 (LCOE)",
+              "weight": 40,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "LCOE 目標 < $50/MWh（2024 年美元），具備詳細且可信的成本分解模型，基於成熟供應鏈與批次建設假設，已有獨立第三方機構（如 OECD NEA）驗證。"
+                },
+                {
+                  "level": 4,
+                  "description": "LCOE 目標 $50-70/MWh，成本模型基於合理工程假設，具備同源技術的部分成本實績支持，整體估算可信度較高。"
+                },
+                {
+                  "level": 3,
+                  "description": "LCOE 目標 $70-100/MWh，或成本估算高度依賴首台機組（FOAK）以外的規模效益假設，不確定性較大。"
+                },
+                {
+                  "level": 2,
+                  "description": "LCOE 目標 > $100/MWh 或成本估算可信度低，缺乏詳細的獨立工程成本分析支持。"
+                },
+                {
+                  "level": 1,
+                  "description": "LCOE 尚未進行詳細估算，或因技術成熟度不足而無法提供有意義的成本預測。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "GEH 公布 LCOE 目標約 $60/MWh（後續批次建設 < $50/MWh），基於 LWR 既有成本實績的工程推算，OPG Markowitz 評估報告認為具備商業可行性，是三者中成本估算可信度最高的。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "X-energy 公布 LCOE 目標 < $60/MWh（Nth-of-a-kind），但 2021 年時的成本估算假設大量規模效益，FOAK 成本的高度不確定性使可信度打折，獨立驗證不足。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "Terrestrial Energy 公布 LCOE 目標 < $65/MWh，但製造商尚未建立，熔鹽維護成本高度不確定，且首台機組成本被 CNSC 相關評估認為可能大幅超出預算，2021 年可信度最低。"
+                }
+              ]
+            },
+            {
+              "id": "KE10-2",
+              "code": "10.2",
+              "name": "資本成本與融資條件",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "已獲主要國際金融機構（如 MDB、出口信貸機構）確定融資承諾，政府擔保已到位，投資風險等級 A 以上，CAPEX 造價明確且具備 EPC 固定總價合約可行性。"
+                },
+                {
+                  "level": 4,
+                  "description": "已有大型戰略投資者（能源公司或國家電力公司）正式投資，但仍缺乏完整的項目融資（Project Finance）結構，CAPEX 估算具可信度。"
+                },
+                {
+                  "level": 3,
+                  "description": "主要依靠開發商資本與政府研發補助，尚未建立項目融資結構，商業融資可行性有待確認，投資風險評估為中等。"
+                },
+                {
+                  "level": 2,
+                  "description": "融資高度依賴政府補助，尚未吸引大型商業投資者，CAPEX 估算不確定性大，商業融資可行性存疑。"
+                },
+                {
+                  "level": 1,
+                  "description": "融資計畫尚不完整，幾乎完全依賴政府資助，缺乏商業融資吸引力，投資風險最高。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 5,
+                  "moreInfo": "GE-Hitachi 核能業務由奇異電氣（GE）與日立（Hitachi）共同持有，OPG 作為業主已投入大量前期資金，加拿大聯邦政府提供 SMR 融資支持計畫，融資結構最完整，商業融資可行性最高。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 3,
+                  "moreInfo": "獲 DOE ARDP 2 億美元資助，Dow Chemical 戰略合作夥伴關係提供一定保障，但整體項目融資結構尚未成形，商業融資風險仍高，CAPEX 不確定性使銀行融資困難。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "主要依賴加拿大 NRCan 政府補助，2021 年時尚無大型戰略投資者，商業融資能力最弱，是三者中資本市場吸引力最低的機型。"
+                }
+              ]
+            },
+            {
+              "id": "KE10-3",
+              "code": "10.3",
+              "name": "運維成本預估 (O&M)",
+              "weight": 30,
+              "enabled": true,
+              "rationaleForScores": [
+                {
+                  "level": 5,
+                  "description": "運維人力 < 50 人/機組，年度 O&M 成本 < $15/MWh，具備遠端監控/自動化運轉能力，無需大規模現場維護團隊，具備成熟維護合約範本。"
+                },
+                {
+                  "level": 4,
+                  "description": "運維人力 50-100 人/機組，年度 O&M 成本 $15-25/MWh，自動化程度較高，維護計畫具體可行。"
+                },
+                {
+                  "level": 3,
+                  "description": "運維人力 100-150 人/機組，年度 O&M 成本 $25-35/MWh，與現有商業核電廠相當，無特殊優劣。"
+                },
+                {
+                  "level": 2,
+                  "description": "運維人力 > 150 人/機組，或特殊維護需求（如熔鹽更換、特殊合金維修）導致 O&M 成本顯著高於傳統核電廠。"
+                },
+                {
+                  "level": 1,
+                  "description": "運維成本無法合理估算，因設計高度創新而缺乏維護商業實績，O&M 風險極高。"
+                }
+              ],
+              "scores": [
+                {
+                  "reactorId": "BWRX-300",
+                  "score": 4,
+                  "moreInfo": "GEH 設計目標運維人力 < 50 人（約為一般 BWR 的 1/4），高度自動化，延用 BWR 成熟維護流程，O&M 成本估算具可信度，預計 $20-25/MWh，整體運維成本效益最高。"
+                },
+                {
+                  "reactorId": "Xe-100",
+                  "score": 4,
+                  "moreInfo": "設計目標高度自動化，TRISO 燃料無需如 LWR 一樣的定期解體換料停機，運維程序相對簡化，惟氦氣系統的維護需要特殊專業人員，O&M 成本中等偏優。"
+                },
+                {
+                  "reactorId": "IMSR400",
+                  "score": 2,
+                  "moreInfo": "熔鹽腐蝕會造成持續的材料退化問題，需要高頻率的關鍵組件更換（特殊合金管件、熱交換器等），預計運維成本是三者中最高的，Terrestrial Energy 尚未公布詳細 O&M 估算。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "K7",
+          "titleZh": "廠址與環境",
+          "enabled": false,
+          "weight": 0,
+          "items": []
+        },
+        {
+          "id": "K8",
+          "titleZh": "非電力應用",
+          "enabled": false,
+          "weight": 0,
+          "items": []
+        },
+        {
+          "id": "K9",
+          "titleZh": "保防與輻射防護",
+          "enabled": false,
+          "weight": 0,
+          "items": []
+        },
+        {
+          "id": "K10",
+          "titleZh": "專案交付能力",
+          "enabled": false,
+          "weight": 0,
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "proj-bwrx300-opg-dnnp",
+      "name": "BWRX-300 加拿大 OPG 專案追蹤",
+      "client": "國際合作處",
+      "status": "draft",
+      "description": "追蹤 Darlington 專案進度",
+      "createdAt": "2026-04-16T14:00:00Z",
+      "updatedAt": "2026-04-16T14:00:00Z",
+      "site": {
+        "name": "Darlington",
+        "country": "Canada",
+        "lat": 43.87,
+        "lng": -78.72,
+        "elevation_m": 80
+      },
+      "reactorCandidates": [
+        "BWRX-300"
+      ],
+      "keGroups": []
+    },
+    {
+      "name": "Browser Test Project",
+      "client": "Google Cloud",
+      "status": "draft",
+      "description": "",
+      "site": {
+        "name": "",
+        "country": "Taiwan",
+        "lat": 0,
+        "lng": 0,
+        "elevation_m": 0
+      },
+      "reactorCandidates": [],
+      "keGroups": [
+        {
+          "id": "KE1",
+          "titleZh": "廠址與環境",
+          "enabled": false,
+          "weight": 10,
+          "items": []
+        },
+        {
+          "id": "KE2",
+          "titleZh": "燃料循環",
+          "enabled": true,
+          "weight": 12,
+          "items": []
+        },
+        {
+          "id": "KE3",
+          "titleZh": "核能安全",
+          "enabled": true,
+          "weight": 15,
+          "items": []
+        },
+        {
+          "id": "KE4",
+          "titleZh": "核島設計與性能",
+          "enabled": true,
+          "weight": 14,
+          "items": []
+        },
+        {
+          "id": "KE5",
+          "titleZh": "平衡廠與電網整合",
+          "enabled": true,
+          "weight": 10,
+          "items": []
+        },
+        {
+          "id": "KE6",
+          "titleZh": "非電力應用",
+          "enabled": false,
+          "weight": 5,
+          "items": []
+        },
+        {
+          "id": "KE7",
+          "titleZh": "保防與輻射防護",
+          "enabled": true,
+          "weight": 10,
+          "items": []
+        },
+        {
+          "id": "KE8",
+          "titleZh": "技術成熟度",
+          "enabled": true,
+          "weight": 13,
+          "items": []
+        },
+        {
+          "id": "KE9",
+          "titleZh": "專案交付能力",
+          "enabled": true,
+          "weight": 11,
+          "items": []
+        },
+        {
+          "id": "KE10",
+          "titleZh": "經濟與融資",
+          "enabled": true,
+          "weight": 10,
+          "items": []
+        }
+      ],
+      "id": "proj-1776403615734",
+      "createdAt": "2026-04-17T05:26:55.734Z",
+      "updatedAt": "2026-04-17T05:26:55.735Z"
+    }
+  ]
+}

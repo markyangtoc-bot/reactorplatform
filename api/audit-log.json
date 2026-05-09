@@ -1,0 +1,65 @@
+[
+  {
+    "id": "log-1778033848156",
+    "time": "2026/5/6 上午10:17:28",
+    "user": "管理者",
+    "username": "admin",
+    "action": "edit",
+    "target": "4S",
+    "detail": "修改欄位「CAPEX美元」"
+  },
+  {
+    "id": "log-1778033619727",
+    "time": "2026/5/6 上午10:13:39",
+    "user": "管理者",
+    "username": "admin",
+    "action": "enable",
+    "target": "4S",
+    "detail": "啟用反應器"
+  },
+  {
+    "id": "log-1778033617687",
+    "time": "2026/5/6 上午10:13:37",
+    "user": "管理者",
+    "username": "admin",
+    "action": "disable",
+    "target": "4S",
+    "detail": "停用反應器"
+  },
+  {
+    "id": "log-1777848528715",
+    "time": "2026/5/4 上午6:48:48",
+    "user": "管理者",
+    "username": "admin",
+    "action": "edit",
+    "target": "Natrium",
+    "detail": "修改欄位「CAPEX」"
+  },
+  {
+    "id": "log-1777446786806",
+    "time": "2026/4/29 下午3:13:06",
+    "user": "管理員",
+    "username": "admin",
+    "action": "edit_user",
+    "target": "admin",
+    "detail": "修改帳號「admin」：名稱→系統管理員、角色→admin"
+  },
+  {
+    "id": "log-1777446763260",
+    "time": "2026/4/29 下午3:12:43",
+    "user": "管理員",
+    "username": "admin",
+    "action": "create_user",
+    "target": "MARK",
+    "detail": "建立帳號「老馬」，角色：editor"
+  },
+  {
+    "id": "log-1777443939730",
+    "time": "2026/4/29 下午2:25:39",
+    "user": "系統管理員",
+    "username": "admin",
+    "action": "login",
+    "target": "—",
+    "detail": "登入系統"
+  }
+]

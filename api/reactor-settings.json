@@ -1,0 +1,142 @@
+{
+  "reactorTypes": [
+    {
+      "label": "BWR",
+      "enabled": true
+    },
+    {
+      "label": "GCR",
+      "enabled": true
+    },
+    {
+      "label": "GFR",
+      "enabled": true
+    },
+    {
+      "label": "HTGR",
+      "enabled": true
+    },
+    {
+      "label": "HWR",
+      "enabled": true
+    },
+    {
+      "label": "LFR",
+      "enabled": true
+    },
+    {
+      "label": "MSR",
+      "enabled": true
+    },
+    {
+      "label": "PWR",
+      "enabled": true
+    },
+    {
+      "label": "SCWR",
+      "enabled": true
+    },
+    {
+      "label": "SFR",
+      "enabled": true
+    },
+    {
+      "label": "Others",
+      "enabled": true
+    }
+  ],
+  "reactorScales": [
+    {
+      "label": "Large",
+      "enabled": true
+    },
+    {
+      "label": "Medium",
+      "enabled": true
+    },
+    {
+      "label": "Microreactor",
+      "enabled": true
+    },
+    {
+      "label": "SMR",
+      "enabled": true
+    },
+    {
+      "label": "GIGA",
+      "enabled": true
+    }
+  ],
+  "designStatuses": [
+    {
+      "label": "Basic Design",
+      "enabled": true
+    },
+    {
+      "label": "Conceptual Design",
+      "enabled": true
+    },
+    {
+      "label": "Detailed Design",
+      "enabled": true
+    },
+    {
+      "label": "Operational",
+      "enabled": true
+    },
+    {
+      "label": "Under Construction",
+      "enabled": true
+    }
+  ],
+  "devTypes": [
+    {
+      "label": "法規進度",
+      "enabled": true
+    },
+    {
+      "label": "研究進展",
+      "enabled": true
+    },
+    {
+      "label": "商業合作",
+      "enabled": true
+    }
+  ],
+  "sourceTypes": [
+    {
+      "label": "法規機構",
+      "enabled": true
+    },
+    {
+      "label": "開發商官網",
+      "enabled": true
+    },
+    {
+      "label": "新聞媒體",
+      "enabled": true
+    },
+    {
+      "label": "國際組織",
+      "enabled": true
+    },
+    {
+      "label": "其他",
+      "enabled": true
+    }
+  ],
+  "trackingGroups": [
+    {
+      "label": "老楊追蹤群組",
+      "enabled": true
+    },
+    {
+      "label": "技術研發組",
+      "enabled": true
+    },
+    {
+      "label": "市場情報組",
+      "enabled": true
+    }
+  ]
+}
